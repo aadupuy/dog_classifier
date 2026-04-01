@@ -1,0 +1,11 @@
+true_breed,predicted_breed,count
+eskimo dog,siberian husky,8
+malamute,siberian husky,6
+standard poodle,miniature poodle,6
+appenzeller,entlebucher,6
+shih-tzu,lhasa,5
+collie,shetland sheepdog,5
+great pyrenees,kuvasz,4
+irish wolfhound,scottish deerhound,4
+siberian husky,malamute,4
+australian terrier,silky terrier,4

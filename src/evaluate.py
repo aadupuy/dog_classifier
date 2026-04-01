@@ -27,3 +27,22 @@ def evaluate_topk(model, dataloader, device, k_list=[1, 3, 5]):
 
     acc = {k: correct[k] / total for k in k_list}
     return acc
+
+def collect_predictions(model, dataloader, device):
+    model.eval()
+
+    all_true = []
+    all_pred = []
+
+    with torch.no_grad():
+        for images, labels in dataloader:
+            images = images.to(device)
+            labels = labels.to(device)
+
+            outputs = model(images)
+            preds = outputs.argmax(dim=1)
+
+            all_true.extend(labels.cpu().tolist())
+            all_pred.extend(preds.cpu().tolist())
+
+    return all_true, all_pred
