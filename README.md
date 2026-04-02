@@ -20,7 +20,6 @@ The pipeline covers the full ML workflow:
 - inference and visualization
 - error analysis (confusion patterns)
 
-⸻
 
 ## Approach
 
@@ -49,7 +48,6 @@ Top-k metrics are particularly useful for fine-grained classification:
 
 This reflects model confidence when multiple classes are visually similar.
 
-⸻
 
 ## Results
 
@@ -62,7 +60,6 @@ with high Top-3 and Top-5 accuracy indicating robust feature learning.
 | Top-3 Accuracy   | 92.5%  |
 | Top-5 Accuracy   | 95.8%  |
 
-⸻
 
 ## Learning Curves
 
@@ -73,7 +70,6 @@ The model shows steady convergence with no significant overfitting:
 - Validation accuracy closely tracks training accuracy
 - Slightly higher validation accuracy suggests effective regularization and data augmentation
 
-⸻
 
 ## Error Analysis
 
@@ -91,7 +87,6 @@ Most errors occur between visually similar breeds, indicating that:
 
 This highlights the difficulty of fine-grained classification tasks.
 
-⸻
 
 ## Inference Examples
 
