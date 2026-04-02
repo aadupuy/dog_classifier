@@ -121,7 +121,7 @@ dog_classifier/
 │   ├── visualize_predictions.py
 │   ├── plot_learning_curves.py
 │   └── confusion_analysis.py
-├── api/ (planned)
+├── app.py
 └── README.md
 ```
 
