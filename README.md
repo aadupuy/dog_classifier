@@ -157,7 +157,12 @@ python -m scripts.visualize_predictions
 python -m scripts.confusion_analysis
 ```
 
+### Streamlit app
+
+```bash
+streamlit run app.py
+```
+
 ## Future Improvements
 
 - Larger backbone (ResNet50 / EfficientNet)
-- Streamlit or FastAPI deployment
