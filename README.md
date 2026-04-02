@@ -6,6 +6,8 @@ Example prediction:
 
 ![Example Predictions](outputs/figures/sample_predictions.png)
 
+![Streamlit Demo](outputs/figures/streamlit_demo.png)
+
 ## Overview
 
 This project implements a deep learning pipeline for fine-grained dog breed classification using transfer learning.
