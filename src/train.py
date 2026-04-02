@@ -1,6 +1,8 @@
 import torch
+import pandas as pd
 import os
 os.makedirs("models", exist_ok=True)
+os.makedirs("outputs/logs", exist_ok=True)
 
 # One epoch of training
 def epoch_train(model, train_loader, criterion, optimizer, device):
@@ -88,5 +90,16 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, device, n
         print("-" * 40)
 
         scheduler.step(val_epoch_acc)
+
+    # Save training log to CSV
+    history_df = pd.DataFrame({
+        "epoch": list(range(1, num_epochs + 1)),
+        "train_loss": train_losses,
+        "train_acc": train_accuracies,
+        "val_loss": val_losses,
+        "val_acc": val_accuracies,
+    })
+    history_df.to_csv("outputs/logs/training_log.csv", index=False)
+    print("Saved training log to outputs/logs/training_log.csv")
 
     return train_losses, train_accuracies, val_losses, val_accuracies

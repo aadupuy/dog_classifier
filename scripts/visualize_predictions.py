@@ -58,4 +58,5 @@ for i, (_, row) in enumerate(val_df_sample.iterrows()):
 
     ax[i].axis("off")
 
+plt.savefig("outputs/figures/sample_predictions.png", dpi=300, bbox_inches="tight")
 plt.show()
