@@ -1,5 +1,3 @@
-:::writing{variant=“standard” id=“83921”}
-
 # 🐶 Dog Breed Classification with Deep Learning
 
 ## Demo
