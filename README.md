@@ -2,9 +2,15 @@
 
 # 🐶 Dog Breed Classification with Deep Learning
 
+## Demo
+
+Example prediction:
+
+![Example Predictions](outputs/figures/sample_predictions.png)
+
 ## Overview
 
-This project builds a dog breed image classifier using deep learning and transfer learning.
+This project implements a deep learning pipeline for fine-grained dog breed classification using transfer learning.
 The model predicts one of 120 dog breeds from an input image.
 
 The pipeline covers the full ML workflow:
@@ -89,23 +95,18 @@ This highlights the difficulty of fine-grained classification tasks.
 
 ## Inference Examples
 
-![Example Predictions](outputs/figures/sample_predictions.png)
-
 The model outputs top-3 predictions with probabilities:
 
-<pre>
-```
+```bash
 True: greater swiss mountain dog
 1. bernese mountain dog (0.40)
 2. greater swiss mountain dog (0.18)
 3. entlebucher (0.07)
 ```
-</pre>
 
 ## Project Structure
 
-<pre>
-```
+```bash
 dog_classifier/
 ├── data/
 ├── models/
@@ -116,59 +117,48 @@ dog_classifier/
 │   ├── model.py
 │   ├── train.py
 │   ├── evaluate.py
-│   ├── predict.py
-│   └── utils.py
+│   └── predict.py
 ├── scripts/
 │   ├── train_model.py
 │   ├── evaluate_model.py
 │   ├── visualize_predictions.py
+│   ├── plot_learning_curves.py
 │   └── confusion_analysis.py
 ├── api/ (planned)
 └── README.md
 ```
-</pre>
 
 ## How to Run
 
 ### Train model
 
-<pre>
-```
+```bash
 python -m scripts.train_model
 ```
-</pre>
 
 ### Evaluate model
 
-<pre>
-```
+```bash
 python -m scripts.evaluate_model
 ```
-</pre>
 
 ### Plot learning curves
 
-```
-</pre>
+```bash
 python -m scripts.plot_learning_curves
 ```
-</pre>
 
 ### Visualize predictions
 
-<pre>
-```
+```bash
 python -m scripts.visualize_predictions
 ```
-</pre>
 
 ### Confusion analysis
 
-<pre>
-```
+```bash
 python -m scripts.confusion_analysis
 ```
-</pre>
 
 ## Future Improvements
 
