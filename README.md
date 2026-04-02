@@ -6,6 +6,8 @@ Example prediction:
 
 ![Example Predictions](outputs/figures/sample_predictions.png)
 
+Streamlit demo: 
+
 ![Streamlit Demo](outputs/figures/streamlit_demo.png)
 
 ## Overview
