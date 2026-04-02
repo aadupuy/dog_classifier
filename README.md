@@ -6,7 +6,9 @@ Example prediction:
 
 ![Example Predictions](outputs/figures/sample_predictions.png)
 
-Streamlit demo: 
+## Live Demo
+
+Go to https://whatdogisit.streamlit.app
 
 ![Streamlit Demo](outputs/figures/streamlit_demo.png)
 
